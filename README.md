@@ -1,4 +1,7 @@
 # LEETCODE-Solutions
+
+[![Validate Solutions](https://github.com/Prakhar1Ojha/LEETCODE-Solutions/actions/workflows/validate.yml/badge.svg)](https://github.com/Prakhar1Ojha/LEETCODE-Solutions/actions/workflows/validate.yml)
+
 LeetCode solutions in multiple programming languages, featuring clean code, optimized approaches, and algorithmic problem-solving techniques.
 
 ## Languages
