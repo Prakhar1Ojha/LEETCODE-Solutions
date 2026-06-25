@@ -42,11 +42,11 @@ echo ""
 
 # ============ Step 3: Validate package declarations ============
 echo "[3/6] Validating package declarations..."
-MISSING_PACKAGES=$(find java/problems -name "*.java" -type f ! -name "*Test.java" -exec grep -L "^package" {} \; 2>/dev/null | wc -l)
+MISSING_PACKAGES=$(find java/src/main/java/com/leetcode/problems -name "*.java" -type f ! -name "*Test.java" -exec grep -L "^package" {} \; 2>/dev/null | wc -l)
 
 if [ "$MISSING_PACKAGES" -gt 0 ]; then
     echo -e "${RED}✗ Found $MISSING_PACKAGES files without package declarations${NC}"
-    find java/problems -name "*.java" -type f ! -name "*Test.java" -exec grep -L "^package" {} \; 2>/dev/null
+    find java/src/main/java/com/leetcode/problems -name "*.java" -type f ! -name "*Test.java" -exec grep -L "^package" {} \; 2>/dev/null
     ((ERRORS++))
 else
     echo -e "${GREEN}✓ All files have package declarations${NC}"
@@ -55,7 +55,7 @@ echo ""
 
 # ============ Step 4: Validate Javadoc ============
 echo "[4/6] Validating Javadoc comments..."
-MISSING_JAVADOC=$(find java/problems -name "Solution.java" -type f -exec grep -L "/\*\*" {} \; 2>/dev/null | wc -l)
+MISSING_JAVADOC=$(find java/src/main/java/com/leetcode/problems -name "Solution.java" -type f -exec grep -L "/\*\*" {} \; 2>/dev/null | wc -l)
 
 if [ "$MISSING_JAVADOC" -gt 0 ]; then
     echo -e "${RED}✗ Found $MISSING_JAVADOC Solution files without Javadoc${NC}"
@@ -67,8 +67,8 @@ echo ""
 
 # ============ Step 5: Validate test files ============
 echo "[5/6] Validating test files..."
-SOLUTION_COUNT=$(find java/problems -name "Solution.java" -type f | wc -l)
-TEST_COUNT=$(find java/problems -name "*Test.java" -type f | wc -l)
+SOLUTION_COUNT=$(find java/src/main/java/com/leetcode/problems -name "Solution.java" -type f | wc -l)
+TEST_COUNT=$(find java/src/test/java/com/leetcode/problems -name "*Test.java" -type f 2>/dev/null | wc -l)
 
 if [ "$SOLUTION_COUNT" -ne "$TEST_COUNT" ]; then
     echo -e "${YELLOW}⚠ Warning: Found $SOLUTION_COUNT solutions but only $TEST_COUNT test files${NC}"

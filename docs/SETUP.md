@@ -54,7 +54,7 @@ mvn --version
 
 ### Step 1: Navigate to Problem Directory
 ```bash
-cd java/problems/easy/P0001_TwoSum
+cd java/src/main/java/com/leetcode/problems/easy/P0001_TwoSum
 ```
 
 ### Step 2: Compile
@@ -174,6 +174,6 @@ javac -cp .:junit-4.13.2.jar:hamcrest-core-1.3.jar SolutionTest.java
 
 - Read [SOLUTION_TEMPLATE.md](./SOLUTION_TEMPLATE.md) for template
 - Check [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines
-- Browse existing solutions in `java/problems/`
+- Browse existing solutions in `java/src/main/java/com/leetcode/problems/`
 
 Happy solving! 🚀

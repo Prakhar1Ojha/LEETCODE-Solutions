@@ -51,34 +51,7 @@ java/problems/
 
 ### Example Structure:
 
-```java
-package com.leetcode.problems.easy;
-
-import java.util.*;
-import java.util.Objects;
-
-/**
- * LeetCode Problem #{ID}: {TITLE}
- * 
- * Problem: {Brief description}
- * Approach: {Explanation of strategy}
- * Time Complexity: O(?)
- * Space Complexity: O(?)
- */
-public class Solution {
-    
-    /**
-     * Method description.
-     * @param param description
-     * @return description
-     * @throws ExceptionType description
-     */
-    public ReturnType methodName(ParamType param) {
-        Objects.requireNonNull(param, "param cannot be null");
-        // Implementation
-    }
-}
-```
+See [docs/SOLUTION_TEMPLATE.md](docs/SOLUTION_TEMPLATE.md) for the full `Solution.java`, `SolutionTest.java`, and `README.md` templates to copy from when adding a new problem. Don't duplicate the templates here — that file is the single source of truth.
 
 ## Test Requirements
 
@@ -89,67 +62,11 @@ Every solution must include a `SolutionTest.java` file with:
 - **Invalid Input:** Null, wrong types (throw exception tests)
 - **Performance:** Test with larger inputs
 
-Example:
-
-```java
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-public class SolutionTest {
-    
-    private Solution solution = new Solution();
-    
-    @Test
-    public void testBasicExample() {
-        // Example from LeetCode
-    }
-    
-    @Test
-    public void testEdgeCase() {
-        // Edge case
-    }
-    
-    @Test(expected = IllegalArgumentException.class)
-    public void testInvalidInput() {
-        // Invalid input handling
-    }
-}
-```
+See the test template in [docs/SOLUTION_TEMPLATE.md](docs/SOLUTION_TEMPLATE.md#file-2-solutiontestjava).
 
 ## Documentation (README.md)
 
-Each problem folder must include `README.md`:
-
-```markdown
-# Problem #{ID}: {TITLE}
-
-**Difficulty:** Easy/Medium/Hard  
-**LeetCode Link:** [Link](https://leetcode.com/problems/{slug})
-
-## Problem Description
-{Copy problem statement from LeetCode}
-
-## Approach
-{Explain the strategy and why it's optimal}
-
-## Complexity Analysis
-- **Time Complexity:** O(?)
-- **Space Complexity:** O(?)
-
-## Key Insights
-- {Point 1}
-- {Point 2}
-- {Point 3}
-
-## Example
-```
-Input: ...
-Output: ...
-```
-
-## Related Problems
-- Problem #{ID}: {Title}
-```
+Each problem folder must include `README.md` documenting problem statement, approach, complexity analysis, key insights, examples, and related problems. See the README template in [docs/SOLUTION_TEMPLATE.md](docs/SOLUTION_TEMPLATE.md#file-3-readmemd).
 
 ## Commit Message Format
 
