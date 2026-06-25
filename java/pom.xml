@@ -43,8 +43,8 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>java</sourceDirectory>
-        <testSourceDirectory>java</testSourceDirectory>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
         
         <plugins>
             <!-- Java Compiler Plugin -->
@@ -82,6 +82,9 @@
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>false</failsOnError>
                     <failOnViolation>false</failOnViolation>
+                    <!-- google_checks.xml is bundled inside the checkstyle dependency jar itself
+                         (no local file needed). If you want to customize rules, vendor a copy
+                         here and reference it as ./checkstyle.xml instead. -->
                 </configuration>
                 <executions>
                     <execution>

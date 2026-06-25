@@ -6,8 +6,8 @@ Use this template when creating a new problem solution.
 
 ```bash
 # Create directory for new problem
-mkdir -p java/problems/{difficulty}/P{ID}_{TITLE}
-cd java/problems/{difficulty}/P{ID}_{TITLE}
+mkdir -p java/src/main/java/com/leetcode/problems/{difficulty}/P{ID}_{TITLE}
+cd java/src/main/java/com/leetcode/problems/{difficulty}/P{ID}_{TITLE}
 
 # Create three files:
 # 1. Solution.java (your code)
@@ -296,7 +296,7 @@ Explanation: ...
 ## Directory Structure After Creation
 
 ```
-java/problems/easy/P0001_TwoSum/
+java/src/main/java/com/leetcode/problems/easy/P0001_TwoSum/
 ├── Solution.java          (150-300 lines)
 ├── SolutionTest.java      (100-200 lines)
 └── README.md              (200-400 lines)

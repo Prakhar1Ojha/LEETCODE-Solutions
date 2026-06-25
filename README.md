@@ -1,11 +1,14 @@
 # LEETCODE-Solutions
+
+[![Validate Solutions](https://github.com/Prakhar1Ojha/LEETCODE-Solutions/actions/workflows/validate.yml/badge.svg)](https://github.com/Prakhar1Ojha/LEETCODE-Solutions/actions/workflows/validate.yml)
+
 LeetCode solutions in multiple programming languages, featuring clean code, optimized approaches, and algorithmic problem-solving techniques.
 
 ## Languages
-- Java
-- Python
-- C++
-- C
+- Java ✅ (active)
+- Python — planned
+- C++ — planned
+- C — planned
 
 ## Goals
 - Strengthen Data Structures & Algorithms
@@ -13,6 +16,12 @@ LeetCode solutions in multiple programming languages, featuring clean code, opti
 - Prepare for coding interviews
 
 ## Progress
-- Easy: 0
+- Easy: 1
 - Medium: 0
 - Hard: 0
+
+## Getting Started
+- [Setup instructions](docs/SETUP.md)
+- [Solution template](docs/SOLUTION_TEMPLATE.md)
+- [Contributing guidelines](CONTRIBUTING.md)
+- [Java solutions](java/README.md)
